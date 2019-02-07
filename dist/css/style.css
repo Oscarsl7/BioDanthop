@@ -14053,9 +14053,17 @@ img#logo-med{
   /*! width:7%; */
   max-height: 70px;
 }
+@media screen and (min-width: 600px){
 img#logo-med-right{
   margin-right: 1rem;
+  min-width: 110px;
   width:7%;
+}
+}
+@media screen and (max-width: 599px) {
+  img#logo-med-right{
+  visibility: hidden;
+  }
 }
 img#icon-med{
   margin-left: 1rem;
@@ -14653,4 +14661,3 @@ select::-ms-expand { display: none; }
 .custom-file-input ~ .custom-file-label::after {
   content: "Button Text";
 }
-

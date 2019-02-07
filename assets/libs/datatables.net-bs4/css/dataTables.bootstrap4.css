@@ -33,9 +33,9 @@ div.dataTables_wrapper div.dataTables_length select {
 
 appearance: none;
 
-background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important;
-
-background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 10px) !important;
+background: url(../../../../assets/images/custom-select.png) white no-repeat 98.5% !important;
+/* background: #fff url(../../assets/images/custom-select.png) no-repeat right 0.75rem center; */
+/* background: url("") white no-repeat calc(100% - 10px) !important; */
 }
 div.dataTables_wrapper div.dataTables_filter {
   text-align: right;
