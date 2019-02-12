@@ -18,9 +18,9 @@
     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabAjustes" role="tab"><span class="hidden-sm-up"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul> -->
   <ul class="nav nav-pills">
-    <li class="col-md-4 nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></a> </li>
-    <li class="col-md-4 nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></a> </li>
-    <li class="col-md-4 nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
+    <li class="col-md-4 nav-item"> <a style="text-decoration:none;" href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down"> Clientes</span></a> </li>
+    <li class="col-md-4 nav-item"> <a style="text-decoration:none;" href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></a> </li>
+    <li class="col-md-4 nav-item"> <a style="text-decoration:none;" href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul>
   <!-- Tab panes -->
   <div class="tab-content">
@@ -51,8 +51,8 @@
                   <a class="dropdown-item" href="{{ asset('/clientes/excel' . '/') }}" target="_blank">Excel</a>
                   <a class="dropdown-item" href="{{ asset('/clientes/pdf' . '/') }}" target="_blank">PDF</a>
                 </div>
+
               </div>
-            </div>
           </div>
         </form>
 
@@ -70,7 +70,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr onmouseover="javascript:void(0)" class="service-panel-toggle">
               <td width="1%">C00001</td>
               <td class="text-nowrap">
                 <a href='#'
@@ -371,6 +371,14 @@
             <!--/span-->
             <div class="col-md-6">
               <div class="form-group">
+                <!-- <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="custom-file-input"> -->
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="form-control custom-file-label" for="inputGroupFile01">Cargar archivo</label>
+
+            </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
                 <label class="control-label">Date of Birth</label>
                 <!-- <input type="text" class="form-control"> -->
                 <div class="input-group">
@@ -414,7 +422,7 @@
                 </div> -->
                 <label class="r" disabled>Paid
                   <input type="radio" id="customRadio22" name="customRadio" disabled>
-                  <span class="checkmark"></span>
+                  <span class="checkmark disabled-button"></span>
                 </label>
               </div>
             </div>
@@ -723,7 +731,9 @@
             <div class="col-md-12">
               <div class="form-group">
                 <label>Cargar archivo</label>
-                <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="form-control">
+                <!-- <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="custom-file-input"> -->
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@
 //****************************
 // Tablas
 //****************************
-
+var aux =true;
 var DataTables = function (tabla) {
   "use strict";
   if ($(tabla).length !== 0) {
@@ -359,11 +359,14 @@ ManageSidebarType: function () {
     //****************************
     $('.sidebartoggler').on("click", function () {
       $("#main-wrapper").toggleClass("mini-sidebar");
+      aux = !aux;
       if ($("#main-wrapper").hasClass("mini-sidebar")) {
-        $(".sidebartoggler").prop("checked", !0);
-        $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
+        //$(".sidebartoggler").prop("checked", !0);
+        //$("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
       }
       else {
+        $("#user-profile").attr("class", "d-block");
+
         $(".sidebartoggler").prop("checked", !1);
         $("#main-wrapper").attr("data-sidebartype", "full");
       }
@@ -378,6 +381,8 @@ ManageSidebarType: function () {
     /* This is for sidebartoggler*/
     //****************************
     $('.sidebartoggler').on("click", function () {
+      console.log('segundo console');
+
       $("#main-wrapper").toggleClass("mini-sidebar");
       if ($("#main-wrapper").hasClass("mini-sidebar")) {
         $(".sidebartoggler").prop("checked", !0);
@@ -414,6 +419,8 @@ ManageSidebarType: function () {
     /* This is for sidebartoggler*/
     //****************************
     $('.sidebartoggler').on("click", function () {
+      console.log('tercer console');
+
       $("#main-wrapper").toggleClass("mini-sidebar");
       if ($("#main-wrapper").hasClass("mini-sidebar")) {
         $(".sidebartoggler").prop("checked", !0);
@@ -447,6 +454,8 @@ ManageSidebarType: function () {
     /* This is for sidebartoggler*/
     //****************************
     $('.sidebartoggler').on("click", function () {
+      console.log('primer console');
+
       $("#main-wrapper").toggleClass("show-sidebar");
       if ($("#main-wrapper").hasClass("show-sidebar")) {
         //$(".sidebartoggler").prop("checked", !0);

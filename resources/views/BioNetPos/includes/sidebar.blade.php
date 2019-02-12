@@ -1,7 +1,8 @@
 <nav class="sidebar-nav">
   <ul id="sidebarnav">
     <!-- User Profile-->
-    <li>
+    <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
+    <li id='user-profile'>
       <!-- User Profile-->
       <div class="user-profile d-flex no-block dropdown m-t-20">
         <div class="user-pic"><img src="http://127.0.0.1:8000/img/4db9ba5c-7a96-5d45-974a-0ed1e4fe299e/usuarios/1546604029.png" alt="users" class="rounded-circle" width="40" /></div>

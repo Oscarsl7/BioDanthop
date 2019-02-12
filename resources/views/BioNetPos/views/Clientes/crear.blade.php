@@ -55,13 +55,21 @@
     <div class="col-md-4">
       <div class="form-group">
         <label class="control-label">Número Interior: </label>
-        <input type="number" min="0" id="cli_numero_interior" min="0" value="" onkeypress="return validar.soloNumeros(event);" class="form-control direccion">
+       <!-- <div class="row borde quantity justify-content-center align-items-center">
+          <input type="number" min="0" id="cli_numero_interior" min="0" value="0" onkeypress="return validar.soloNumeros(event);" >
+         </div> -->
+         <div class="row borde quantity justify-content-center align-items-center">
+          <input class="col-3" id="cli_numero_interior" type="number"onkeypress="return validar.soloNumeros(event);"  class="form-control  direccion"min="1" max="9" step="1" value="1">
+        </div>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="form-group">
+      <div class="numbers-row">
         <label class="control-label">Número Exterior: </label>
-        <input type="number" min="0" id="cli_numero_exterior" min="0" value="" onkeypress="return validar.soloNumeros(event);" class="form-control direccion">
+        <!-- <input type="number" min="0" id="cli_numero_exterior"  value="" onkeypress="return validar.soloNumeros(event);" class="form-control direccion"> -->
+
+        <input type="numF" min="0" id="cli_numero_exterior" value="3" onkeypress="return validar.soloNumeros(event);" class="form-control direccion">
+
       </div>
     </div>
   </div>

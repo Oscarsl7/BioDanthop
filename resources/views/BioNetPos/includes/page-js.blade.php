@@ -29,7 +29,7 @@
     <script type="text/javascript" src="{{ asset('assets/extra-libs/DataTables/DataTables-1.10.16/extensions/FixedHeader/js/dataTables.fixedHeader.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/extra-libs/DataTables/DataTables-1.10.16/extensions/Responsive/js/dataTables.responsive.min.js') }}"></script>
     <script type="text/javascript" src="{{asset('assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
-
+    <script type="text/javascript" src="{{asset('js/numero.js')}}"></script>
 
 
 
