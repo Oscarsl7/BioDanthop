@@ -53,14 +53,20 @@ $(function() {
     // Right sidebar options
     // ==============================================================
     $(function() {
-        $(".service-panel-toggle").on('click', function() {
-            $(".customizer").toggleClass('show-service-panel');
+            $(".service-panel-toggle").on('mouseover', function() {
+                $(".customizer").addClass('show-service-panel');
+                // ==============================================================
+                // Antiguo metodo para mostar el panel derecho
+                // ==============================================================
+                //$(".customizer").toggleClass('show-service-panel');
 
+            });
+            $('.close').on('click', function() {
+                $(".customizer").removeClass('show-service-panel');
+            });
         });
-        $('.page-wrapper').on('click', function() {
-            $(".customizer").removeClass('show-service-panel');
-        });
-    });
+
+
     // ==============================================================
     // This is for the floating labels
     // ==============================================================
@@ -187,10 +193,10 @@ $(function() {
 
       //funcion para que muestre el nombre del archivo
       $('.custom-file-input').on('change', function() {
-          let fileName = $(this).val().split('\\').pop();
-          console.log("entra");
-          $(this).next('.custom-file-label').addClass("selected").html(fileName);
-       });
+       let fileName = $(this).val().split('\\').pop();
+
+       $(this).next('.custom-file-label').addClass("selected").html(fileName);
+    });
 
 
 

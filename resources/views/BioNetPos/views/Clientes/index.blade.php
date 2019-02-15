@@ -18,9 +18,9 @@
     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabAjustes" role="tab"><span class="hidden-sm-up"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul> -->
   <ul class="nav nav-pills">
-    <li class="col-md-4 nav-item"> <a style="text-decoration:none;" href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down"> Clientes</span></a> </li>
-    <li class="col-md-4 nav-item"> <a style="text-decoration:none;" href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></a> </li>
-    <li class="col-md-4 nav-item"> <a style="text-decoration:none;" href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
+    <li class="col-md-4 nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></p></a> </li>
+    <li class="col-md-4 nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></p></a> </li>
+    <li class="col-md-4 nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><p id="tab" align="center"><i class="fa fa-cog"></i></span><span class="hidden-xs-down">Ajustes</span></p></a> </li>
   </ul>
   <!-- Tab panes -->
   <div class="tab-content">
@@ -51,8 +51,8 @@
                   <a class="dropdown-item" href="{{ asset('/clientes/excel' . '/') }}" target="_blank">Excel</a>
                   <a class="dropdown-item" href="{{ asset('/clientes/pdf' . '/') }}" target="_blank">PDF</a>
                 </div>
-
               </div>
+            </div>
           </div>
         </form>
 
@@ -70,7 +70,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr onmouseover="javascript:void(0)" class="service-panel-toggle">
+            <tr>
               <td width="1%">C00001</td>
               <td class="text-nowrap">
                 <a href='#'
@@ -327,6 +327,46 @@
   </div>
 
   <hr />
+
+  <table class="table tableborder table-hover m-t-30">
+              <thead>
+                <th>Fecha</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Monto Pagado</th>
+                <th>Monto Restante</th>
+              </thead>
+              <tbody>
+                <tr onmouseover="javascript:void(0)" class="service-panel-toggle">
+
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>$16.0</td>
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                </tr>
+                <tr>
+                  <td>IVA</td>
+                  <td>$6.0</td>
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                  <td>Subdescuento</td>
+                  <td>$10.0</td>
+                </tr>
+              </tbody>
+            </table>
+
+
   <h3>+ Ejemplos</h3>
   <hr />
   <button type="button" id="btnModal" class="btn btn-success" aria-haspopup="true" aria-expanded="false">
@@ -371,26 +411,19 @@
             <!--/span-->
             <div class="col-md-6">
               <div class="form-group">
-                <!-- <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="custom-file-input"> -->
-                <input type="file" class="custom-file-input" id="inputGroupFile01">
-                <label class="form-control custom-file-label" for="inputGroupFile01">Cargar archivo</label>
-
-            </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
                 <label class="control-label">Date of Birth</label>
                 <!-- <input type="text" class="form-control"> -->
                 <div class="input-group">
                   <input type="text" id="datepicker-autoclose" class="form-control mydatepicker" placeholder="mm/dd/yyyy">
-                  <div class="input-group-append">
-                    <i class="icon-calender"></i></span>
-                  </div>
+                  <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
                 </div>
               </div>
             </div>
             <!--/span-->
           </div>
+
           <!--/row-->
           <div class="row">
             <div class="col-md-6">
@@ -404,6 +437,7 @@
                 </select>
               </div>
             </div>
+
             <!--/span-->
             <div class="col-md-6">
               <div class="form-group">
@@ -421,13 +455,24 @@
                   <label class="custom-control-label" for="customRadio22">Paid</label>
                 </div> -->
                 <label class="r" disabled>Paid
-                  <input type="radio" id="customRadio22" name="customRadio" disabled>
-                  <span class="checkmark disabled-button"></span>
+                 <input type="radio" id="customRadio22" name="customRadio" disabled>
+                 <span class="checkmark disabled-button"></span>
                 </label>
               </div>
             </div>
+
             <!--/span-->
           </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- <label>Cargar archivo</label>
+                <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="form-control"> -->
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div
           <!--/row-->
           <h4 class="card-title m-t-40">Address</h4>
         </div>
@@ -438,6 +483,7 @@
             <input type="range" class="form-control" id="range" value="50">
           </div>
         </div>
+
 
         <hr />
 
@@ -634,7 +680,22 @@
         <hr />
         <div class="form-group row p-t-20">
           <div class="col-sm-4">
-            <div class="custom-control custom-checkbox">
+            <div class="form-check">
+              <label class="ch">
+              <input type="checkbox" id="customCheck1" checked="checked">Check this custom checkbox
+              <span class="checkm"></span>
+            </div>
+            <div class="form-check">
+                <label class="ch">
+                <input type="checkbox" id="customCheck2" checked="checked">Check this custom checkbox
+                <span class="checkm"></span>
+            </div>
+            <div class="form-check">
+              <label class="ch">
+              <input type="checkbox" id="customCheck3" >Check this custom checkbox
+              <span class="checkm"></span>
+            </div>
+            <!-- <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck1">
               <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
             </div>
@@ -645,17 +706,25 @@
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck3">
               <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
-            </div>
+            </div> -->
           </div>
           <div class="col-sm-4">
-            <div class="custom-control custom-radio">
+            <label class="r">Toggle this custom radio
+              <input type="radio" id="customRadio1" name="customRadio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="r">Toggle this custom radio
+              <input type="radio" id="customRadio2" name="customRadio">
+              <span class="checkmark"></span>
+            </label>
+            <!-- <div class="custom-control custom-radio">
               <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
               <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
             </div>
             <div class="custom-control custom-radio">
               <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
               <label class="custom-control-label" for="customRadio2">Toggle this custom radio</label>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -664,7 +733,7 @@
 
         <hr />
 
-        <div class="row m-t-15 m-b-15">
+        <!-- <div class="row m-t-15 m-b-15">
           <div class="col-md-3">
             <div class="row align-items-center">
               <div class="col-12 col-sm-4 p-l-5"><img src="{{ asset('img/añadirproducto2.png')}}" width="100%" alt="" id="icon-med"></div>
@@ -695,16 +764,45 @@
                     <span class="checkm"></span>
                   </div>
                 </div>
-
-                <!-- <div class="col-4 p-l-5">
-                <label class="ch">
-                <input type="checkbox" checked="checked">
-                <span class="checkm"></span>
-              </div>
-              <div class="col-8"><h4 href="" class="nav-link">Factura</h4></div> -->
             </div>
           </div>
           <div class="col-sm-3"></div>
+        </div> -->
+
+        <div class="row m-t-5">
+          <div class="col-3 text-left">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-3 col-sm-4 p-l-5"><img style="min-width: 50px;" src="http://127.0.0.1:8000/img/añadirproducto2.png" alt="" class="img-fluid user-img"></div>
+              <div class="col-12 col-md-9 col-sm-8 p-t-5"><h4 style="text-align: left;" class="font-12 m-t-5">Producto</h4></div>
+            </div>
+              <!-- <img src="{{ asset('img/añadirproducto2.png')}}" alt="" class="img-fluid user-img">
+              <h6 class="font-12 m-t-5">Producto</h6> -->
+          </div>
+          <div class="col-3 text-center">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-3 col-sm-4 p-l-5"><img style="min-width: 50px;" src="{{ asset('img/añadirvendedor2.png')}}" alt="" class="img-fluid user-img"></div>
+              <div class="col-12 col-md-9 col-sm-8 p-t-5"><h4 style="text-align: left;" class="font-12 m-t-5">Vendedor</h4></div>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-3 col-sm-4 p-l-5"><img style="min-width: 50px;" src="http://127.0.0.1:8000/img/añadirproducto2.png" alt="" class="img-fluid user-img"></div>
+              <div class="col-12 col-md-9 col-sm-8 p-t-5"><h4 style="text-align: left;" class="font-12 m-t-5">Producto</h4></div>
+            </div>
+          </div>
+          <div class="col-3" >
+            <div class="row align-items-center">
+              <div class="col-12">
+                <div class="form-check">
+                  <label class="ch">
+                    <input type="checkbox" checked="checked">Factura
+                    <span class="checkm"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
         <hr />
@@ -716,6 +814,10 @@
             <span class="slider rounde"></span>
           </label>
         </div>
+
+
+
+
         <script id="modal-importar" type="text/x-handlebars-template">
 
           <div class="row">
@@ -730,8 +832,8 @@
           <div class="row p-t-20">
             <div class="col-md-12">
               <div class="form-group">
-                <label>Cargar archivo</label>
-                <!-- <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="custom-file-input"> -->
+                <!-- <label>Cargar archivo</label>
+                <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="form-control"> -->
                 <input type="file" class="custom-file-input" id="inputGroupFile01">
                 <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
               </div>
@@ -741,7 +843,7 @@
             <div class="col-md-12">
               <h5>Instrucciones</h5>
               <ol>
-                <li><a href="{{ asset('docs/importarClientes.xlsx')}}">Descargar</a> layout de captura de clientes.</li>
+                <li><a href="{ asset('docs/importarClientes.xlsx')}">Descargar</a> layout de captura de clientes.</li>
                 <li>
                   Capturar la información de los clientes a importar.
                   <ul>
@@ -757,7 +859,6 @@
             </div>
           </div>
         </script>
-
 
       @endsection
 

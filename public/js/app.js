@@ -344,6 +344,7 @@ ManageSidebarType: function () {
     /* This is for the mini-sidebar if width is less then 1170*/
     //****************************
     var setsidebartype = function () {
+      
       var width = (window.innerWidth > 0) ? window.innerWidth : this.screen.width;
       if (width < 1170) {
         $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
@@ -351,6 +352,7 @@ ManageSidebarType: function () {
       else {
         $("#main-wrapper").attr("data-sidebartype", "full");
       }
+      $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
     };
     $(window).ready(setsidebartype);
     $(window).on("resize", setsidebartype);

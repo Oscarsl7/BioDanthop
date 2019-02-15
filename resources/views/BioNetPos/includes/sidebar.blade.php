@@ -1,15 +1,15 @@
 <nav class="sidebar-nav">
   <ul id="sidebarnav">
     <!-- User Profile-->
-    <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
+    <li class="nav-item d-none d-md-block"><a  class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar" style="padding-left: 22px;padding-right: 22px;background-color: #0D242e;"><i class="mdi mdi-menu font-24"></i></a></li>
     <li id='user-profile'>
       <!-- User Profile-->
       <div class="user-profile d-flex no-block dropdown m-t-20">
         <div class="user-pic"><img src="http://127.0.0.1:8000/img/4db9ba5c-7a96-5d45-974a-0ed1e4fe299e/usuarios/1546604029.png" alt="users" class="rounded-circle" width="40" /></div>
         <div class="user-content hide-menu m-l-10">
-          <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <h5 class="m-b-0 user-name font-medium">Administrador Administrador Administrador <i class="fa fa-angle-down"></i></h5>
-            <span class="op-5 user-email">admin@gmail.com</span>
+          <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;">
+            <h5 class="m-b-0 user-name font-small">Abraham Esau Moreno López<i class="fa fa-angle-down"></i></h5>
+            <span class="op-5 user-email">a.moreno@danthop.com</span>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
             <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Mi Perfil</a>

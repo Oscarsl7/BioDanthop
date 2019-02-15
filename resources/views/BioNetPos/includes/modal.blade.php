@@ -10,7 +10,9 @@
                 <div id="modal-contenido" style="width: 100%;"></div>
             </div>
             <div class="modal-footer text-right">
-                <div id="modal-footer" class="text-right" style="width: 100%;"></div>
+                <div class="container">
+                    <div id="modal-footer" class="row text-righ" style="width: 100%;"></div>
+                </div>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -91,17 +93,25 @@
 
 <script id="modal-botones" type="text/x-handlebars-template">
     @{{#if btn1}}
+    <div class="col-sm">
 		<button type="button" class="btn btn-success-modal" onclick="@{{ function1 }}">
 			<span class="@{{ icono1 }}"></span>&nbsp;@{{ label1 }}</button>
+    </div>
     @{{/if}}
     @{{#if btn2}}
+    <div class="col-sm">
 		<button type="button" class="btn btn-@{{ tipo2 }}-modal" onclick="@{{ function2 }}">
 			<span class="@{{ icono2 }}"></span>&nbsp;@{{ label2 }}</button>
+    </div>
     @{{/if}}
     @{{#if btn3}}
+    <div class="col-sm">
         <button type="button" class="btn btn-@{{ tipo3 }}-modal" onclick="@{{ function3 }}">
             <span class="@{{ icono3 }}"></span>&nbsp;@{{ label3 }}</button>
+    </div>
 	@{{/if}}
+    <div class="col-sm">
 		<button type="button" class="btn btn-secondary-modal" data-dismiss="modal" aria-label="Close">
 			<i class="fas fa-times"></i>&nbsp;Cerrar</button>
+    </div>
 </script>
