@@ -6,6 +6,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
+
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon -->
                         <b class="logo-icon text-center m-l-15">
@@ -55,24 +56,28 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li-->
-                        @if (count($asSubMenu) > 0)
-                            @foreach ($asSubMenu as $item)
-                              @if(is_array($item))
-                                <li class="nav-item dropdown" style="margin-left: 2px;"><!--dropdown-toggle data-toggle="dropdown"-->
-                                  <a id="{{ $item['sId'] }}" class="nav-link {{ $item['sClase'] }}" href="{{ $item['sHref'] }}" role="button"
-                                    @if (count($item['asData']) > 0)
-                                      @foreach ($item['asData'] as $key => $value)
-                                        {!! 'data-' . $key . '="' . $value . '" ' !!}
-                                      @endforeach
-                                    @endif
-                                  ><!--aria-haspopup="true" aria-expanded="false"-->
-                                  <span class="d-none d-md-block"><i class="{{ $item['sIcono'] }}"></i> {{ $item['sNombre'] }}</span>
-                                  <span class="d-block d-md-none"><i class="{{ $item['sIcono'] }}"></i></span>
-                                </a>
-                              </li>
-                            @endif
-                          @endforeach
-                        @endif
+                        <div id="navButtons" class="container">
+                                <div class="row" style="text-align: center;">
+                                        @if (count($asSubMenu) > 0)
+                                            @foreach ($asSubMenu as $item)
+                                              @if(is_array($item))
+                                                <li class="nav-item dropdown"  style="margin-left: 2px;"><!--dropdown-toggle data-toggle="dropdown"-->
+                                                  <a id="{{ $item['sId'] }}" class="nav-link {{ $item['sClase'] }}" href="{{ $item['sHref'] }}" role="button"
+                                                    @if (count($item['asData']) > 0)
+                                                      @foreach ($item['asData'] as $key => $value)
+                                                        {!! 'data-' . $key . '="' . $value . '" ' !!}
+                                                      @endforeach
+                                                    @endif
+                                                  ><!--aria-haspopup="true" aria-expanded="false"-->
+                                                  <span class="d-none d-md-block"><i class="{{ $item['sIcono'] }}"></i> {{ $item['sNombre'] }}</span>
+                                                  <span class="d-block d-md-none"><i class="{{ $item['sIcono'] }}"></i></span>
+                                                </a>
+                                              </li>
+                                            @endif
+                                          @endforeach
+                                        @endif
+                                </div>
+                        </div>
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->

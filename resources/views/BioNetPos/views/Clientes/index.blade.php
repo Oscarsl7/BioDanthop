@@ -769,25 +769,25 @@
           <div class="col-sm-3"></div>
         </div> -->
 
-        <div class="row m-t-5">
+        <div class="row m-t-15 m-b-15">
           <div class="col-3 text-left">
             <div class="row align-items-center">
-              <div class="col-12 col-md-3 col-sm-4 p-l-5"><img style="min-width: 50px;" src="http://127.0.0.1:8000/img/añadirproducto2.png" alt="" class="img-fluid user-img"></div>
-              <div class="col-12 col-md-9 col-sm-8 p-t-5"><h4 style="text-align: left;" class="font-12 m-t-5">Producto</h4></div>
+              <div class="col-12 col-md-3 col-sm-12 p-l-5"><img style="min-width: 50px;" src="http://127.0.0.1:8000/img/añadirproducto2.png" alt="" class="img-fluid user-img"></div>
+              <div class="col-12 col-md-9 col-sm-12 p-t-5"><a class="underline" href="">Producto</a></div>
             </div>
               <!-- <img src="{{ asset('img/añadirproducto2.png')}}" alt="" class="img-fluid user-img">
               <h6 class="font-12 m-t-5">Producto</h6> -->
           </div>
           <div class="col-3 text-center">
             <div class="row align-items-center">
-              <div class="col-12 col-md-3 col-sm-4 p-l-5"><img style="min-width: 50px;" src="{{ asset('img/añadirvendedor2.png')}}" alt="" class="img-fluid user-img"></div>
-              <div class="col-12 col-md-9 col-sm-8 p-t-5"><h4 style="text-align: left;" class="font-12 m-t-5">Vendedor</h4></div>
+              <div class="col-12 col-md-3 col-sm-12 p-l-5"><img style="min-width: 50px;" src="{{ asset('img/añadirvendedor2.png')}}" alt="" class="img-fluid user-img"></div>
+              <div class="col-12 col-md-9 col-sm-12 p-t-5"><a class="underline" href="">Vendedor</a></div>
             </div>
           </div>
           <div class="col-3 text-center">
             <div class="row align-items-center">
-              <div class="col-12 col-md-3 col-sm-4 p-l-5"><img style="min-width: 50px;" src="http://127.0.0.1:8000/img/añadirproducto2.png" alt="" class="img-fluid user-img"></div>
-              <div class="col-12 col-md-9 col-sm-8 p-t-5"><h4 style="text-align: left;" class="font-12 m-t-5">Producto</h4></div>
+              <div class="col-12 col-md-3 col-sm-12 p-l-5"><img style="min-width: 50px;" src="http://127.0.0.1:8000/img/añadirproducto2.png" alt="" class="img-fluid user-img"></div>
+              <div class="col-12 col-md-9 col-sm-12 p-t-5"><a class="underline" href="">Producto</a></div>
             </div>
           </div>
           <div class="col-3" >
@@ -859,7 +859,63 @@
             </div>
           </div>
         </script>
+        <aside class="customizer" style="display: none;">
 
+          <div class="customizer-body">
+            <div class="container">
+              <div class="row text-left m-t-10 p-t-20">
+                <div class="col-12"><img src="../../assets/images/flecha.png" alt="" width="3%" class="close"></div><br>
+              </div>
+              <div class="row p-10">
+                <h1 class="modal-title text-center" ><strong>Datos nuevo</strong></h1>
+              </div>
+              <div class="row p-l-30">
+                <div class="col-1"><img src="../../css/iconos/50x50/venta.png" alt="" id="mini-icono"></div><div class="col-11"><h4>Ficha tecnica del producto</h4></div>
+                <div class="col-12">
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active"> <img class="img-fluid" src="../../assets/images/big/img4.jpg" alt="First slide"> </div>
+                      <div class="carousel-item"> <img class="img-fluid" src="../../assets/images/big/img5.jpg" alt="Second slide"> </div>
+                      <div class="carousel-item"> <img class="img-fluid" src="../../assets/images/big/img6.jpg" alt="Third slide"> </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                  </div>
+                </div>
+                <div class="col-12"> <label class="gray" for="">Producto 1</label></div>
+                <div class="col-12"> <label class="gray" for="">Descripcion:</label> Lorem ipsum dolor sit amet, consectetur adipisicing elit. blaah, blaah</div>
+                <div class="col-12"> <label class="gray" for="">Modificador 1</label></div>
+              </div>
+              <div class="row p-l-30">
+                <div class="col-12 col-sm-6">Apartado</div>
+                <div class="col-12 col-sm-6 order-sm-2">
+                  <input type="text" class="form-control" id="datepicker-autoclose1" placeholder="mm/dd/yyyy">
+                  <div class="input-group-append">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 ">Vencimiento</div>
+                <div class="col-12 col-sm-6">
+                  <input type="text" class="form-control" id="datepicker-autoclose2" placeholder="mm/dd/yyyy">
+                  <div class="input-group-append">
+                  </div>
+                </div>
+              </div>
+              <div class="row p-l-30 p-t-20">
+                <div class="col-1"><img src="../../css/iconos/50x50/cliente.png" alt="" id="mini-icono"></div><div class="col-11"><h4>Cliente</h4></div>
+                <div class="col-5"><label for="" class="gray">Nombre:</label></div>     <div class="col-7">Valerie Libe</div>
+                <div class="col-5"><label for="" class="gray">Correo:</label></div>     <div class="col-7">valerie@gmail.com</div>
+                <div class="col-5"><label for="" class="gray">Telefono:</label></div>   <div class="col-7">4445557788</div>
+                <div class="col-5"><label for="" class="gray">RFC:</label></div>        <div class="col-7">54tyghsbndk</div>
+              </div>
+
+              <div class="row p-l-30 p-t-20 justify-content-center align-items-center">
+                <div class="col-8">
+                  <button type="button" name="button" style="width: 100%;" class="btn">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
       @endsection
 
       @section('js_content')
@@ -1040,7 +1096,7 @@
 
         // Date Picker
         jQuery('.mydatepicker, #datepicker, .input-group.date').datepicker();
-        jQuery('#datepicker-autoclose').datepicker({
+        jQuery('#datepicker-autoclose1').datepicker({
           autoclose: true,
           todayHighlight: true
         });

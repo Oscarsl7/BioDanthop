@@ -276,7 +276,7 @@ $.fn.AdminSettings = function (settings) {
           $("#theme-view").prop("checked", !0);
         }
         else {
-          $('#' + myid).attr("data-theme", 'light');
+          $('#' + myid).attr("data-theme", 'mini-sidebar');
           $("body").prop("checked", !1);
         }
         break;
@@ -344,7 +344,7 @@ ManageSidebarType: function () {
     /* This is for the mini-sidebar if width is less then 1170*/
     //****************************
     var setsidebartype = function () {
-      
+
       var width = (window.innerWidth > 0) ? window.innerWidth : this.screen.width;
       if (width < 1170) {
         $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
@@ -352,7 +352,7 @@ ManageSidebarType: function () {
       else {
         $("#main-wrapper").attr("data-sidebartype", "full");
       }
-      $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
+      // $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
     };
     $(window).ready(setsidebartype);
     $(window).on("resize", setsidebartype);
@@ -686,3 +686,4 @@ function JSONize(str) {
 Array.prototype.unique=function(a){
   return function(){return this.filter(a)}}(function(a,b,c){return c.indexOf(a,b+1)<0
   });
+  $("#main-wrapper").addClass("mini-sidebar");

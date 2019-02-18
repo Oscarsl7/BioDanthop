@@ -15,6 +15,7 @@ $(function() {
             $(".navbar-header").addClass("expand-logo");
             if (!aux)
             {
+                 $('#navButtons').css('margin-left', 5);
                 $(".sidebartoggler").prop("checked", !1);
                 $("#main-wrapper").attr("data-sidebartype", "full");
                 $("#user-profile").attr("class", "d-block");
@@ -27,6 +28,7 @@ $(function() {
 
             if(!aux)
             {
+                 $('#navButtons').css('margin-left', 170);
                 $(".sidebartoggler").prop("checked", !0);
                 $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
                 $("#user-profile").attr("class", "d-none");
@@ -54,7 +56,15 @@ $(function() {
     // ==============================================================
     $(function() {
             $(".service-panel-toggle").on('mouseover', function() {
-                $(".customizer").addClass('show-service-panel');
+                $('.customizer').css('display', 'block');
+
+
+                setTimeout(function() {
+                    $(".customizer").addClass('show-service-panel');
+                }, 100);
+                // setTimeout(function() {
+                //     $('.customizer').css('display', 'block');
+                // }, 1000);
                 // ==============================================================
                 // Antiguo metodo para mostar el panel derecho
                 // ==============================================================
@@ -63,6 +73,10 @@ $(function() {
             });
             $('.close').on('click', function() {
                 $(".customizer").removeClass('show-service-panel');
+                setTimeout(function() {
+                    $('.customizer').css('display', 'none');
+                }, 300);
+
             });
         });
 
@@ -187,6 +201,10 @@ $(function() {
 
              if (!container.is(e.target) && container.has(e.target).length === 0) {
                   $(".customizer").removeClass('show-service-panel');
+
+                  setTimeout(function() {
+                      $('.customizer').css('display', 'none');
+                  }, 300);
              }
       });
 
@@ -194,8 +212,11 @@ $(function() {
       //funcion para que muestre el nombre del archivo
       $('.custom-file-input').on('change', function() {
        let fileName = $(this).val().split('\\').pop();
-
-       $(this).next('.custom-file-label').addClass("selected").html(fileName);
+       if(fileName.length > 0)
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
+        else{
+            console.log('entra');
+            $(this).next('.custom-file-label').removeClass("selected")}
     });
 
 
