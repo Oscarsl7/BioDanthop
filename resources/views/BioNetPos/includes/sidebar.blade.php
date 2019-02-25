@@ -1,7 +1,11 @@
 <nav class="sidebar-nav">
   <ul id="sidebarnav">
     <!-- User Profile-->
-    <li class="nav-item d-none d-md-block"><a  class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar" style="padding-left: 22px;padding-right: 22px;background-color: #0D242e;"><i class="mdi mdi-menu font-24"></i></a></li>
+    <li class="nav-item d-none d-md-block">
+      <a id="backMenu" class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar" style="padding-left: 22px;padding-right: 22px;background-color: #0D242e;">
+        <i id="iconoMenu" class="mdi mdi-menu font-24"></i>
+      </a>
+    </li>
     <li id='user-profile'>
       <!-- User Profile-->
       <div class="user-profile d-flex no-block dropdown m-t-20">

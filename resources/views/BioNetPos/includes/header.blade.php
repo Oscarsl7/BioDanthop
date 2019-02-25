@@ -15,6 +15,7 @@
                             <img src="{{ asset('img/logo_business.png') }}" style="width:180px;" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
                             <img src="{{ asset('img/logo_business.png') }}" style="width:180px;" alt="homepage" class="light-logo" />
+                            <!-- <img src="{{ asset('img/logo-bn.png')}}" style="width:45px;" alt="homepage" class="light-logo"> -->
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
@@ -23,6 +24,7 @@
                              <img src="{{ asset('img/logo_business.png') }}" class="light-logo" alt="homepage" />
                         </span-->
                     </a>
+
                     <!-- ============================================================== -->
                     <!-- End Logo -->
                     <!-- ============================================================== -->
@@ -30,7 +32,8 @@
                     <!-- Toggle which is visible on mobile only -->
                     <!-- ============================================================== -->
                     <a class="topbartoggler  d-block d-md-none waves-effect waves-light " href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
-                </div>
+
+            </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
@@ -57,12 +60,12 @@
                             </div>
                         </li-->
                         <div id="navButtons" class="container">
-                                <div class="row" style="text-align: center;">
+                                <div class="row" style="text-align: center;height: 75px;" >
                                         @if (count($asSubMenu) > 0)
                                             @foreach ($asSubMenu as $item)
                                               @if(is_array($item))
-                                                <li class="nav-item dropdown"  style="margin-left: 2px;"><!--dropdown-toggle data-toggle="dropdown"-->
-                                                  <a id="{{ $item['sId'] }}" class="nav-link {{ $item['sClase'] }}" href="{{ $item['sHref'] }}" role="button"
+                                                <!-- <li class="nav-item dropdown"  style="margin-left: 2px;"> -->
+                                                  <a style="padding: 25px 10px;" id="{{ $item['sId'] }}" class="nav-link {{ $item['sClase'] }}" href="{{ $item['sHref'] }}" role="button"
                                                     @if (count($item['asData']) > 0)
                                                       @foreach ($item['asData'] as $key => $value)
                                                         {!! 'data-' . $key . '="' . $value . '" ' !!}
@@ -72,12 +75,14 @@
                                                   <span class="d-none d-md-block"><i class="{{ $item['sIcono'] }}"></i> {{ $item['sNombre'] }}</span>
                                                   <span class="d-block d-md-none"><i class="{{ $item['sIcono'] }}"></i></span>
                                                 </a>
-                                              </li>
+                                              <!-- </li> -->
                                             @endif
                                           @endforeach
                                         @endif
                                 </div>
                         </div>
+
+
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->

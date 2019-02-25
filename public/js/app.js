@@ -352,7 +352,7 @@ ManageSidebarType: function () {
       else {
         $("#main-wrapper").attr("data-sidebartype", "full");
       }
-      // $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
+       $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
     };
     $(window).ready(setsidebartype);
     $(window).on("resize", setsidebartype);
@@ -414,6 +414,7 @@ ManageSidebarType: function () {
         $("#main-wrapper").attr("data-sidebartype", "iconbar");
         $("#main-wrapper").removeClass("mini-sidebar");
       }
+
     };
     $(window).ready(setsidebartype);
     $(window).on("resize", setsidebartype);
