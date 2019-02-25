@@ -37,6 +37,7 @@
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
+                
                 @include('BioNetPos.includes.sidebar')
                 <!-- End Sidebar navigation -->
             </div>

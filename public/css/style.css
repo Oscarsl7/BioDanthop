@@ -7983,7 +7983,7 @@ html[dir="ltr"] body .p-l-0 {
       position: relative;
       top: 64px; }
 
-      
+
   .left-part {
     left: -260px;
     background: #eef5f9;
@@ -8467,8 +8467,8 @@ Notify
   z-index: 50;
   transition: 0.2s ease-in;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
-  background: #fff;
-  height: 64px; }
+  background: #0D242e;
+  height: 75px; }
   .topbar .navbar-collapse {
     padding: 0px 10px 0 0; }
   .topbar .top-navbar {
