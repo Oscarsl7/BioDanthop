@@ -39,7 +39,7 @@ $(function() {
 
             if (!$(this).hasClass("active")) {
                 // hide any open menus and remove all other classes
-                 $('#navButtons').css('margin-left', 170);
+                 $('#navButtons').css('margin-left', 185);
                 $('#backMenu').css('background-color', '#0D242e');
                  $('#iconoMenu').css('color', '#f1f1f1');
                 $("ul", $(this).parents("ul:first")).removeClass("in");
@@ -53,7 +53,7 @@ $(function() {
             else if ($(this).hasClass("active")) {
                 $('#backMenu').css('background-color', '#f1f1f1');
                  $('#iconoMenu').css('color', '#0D242e');
-                $('#navButtons').css('margin-left', 5);
+                $('#navButtons').css('margin-left', 0);
                 $(this).removeClass("active");
                 $(this).parents("ul:first").removeClass("active");
                 $(this).next("ul").removeClass("in");

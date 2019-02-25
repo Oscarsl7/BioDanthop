@@ -2019,7 +2019,7 @@ pre {
           background-color: #dddddd;
           background-clip: padding-box;
           border: 1px solid #e9ecef;
-          border-radius: 2px;
+          border-radius: 0px;
           transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
           @media screen and (prefers-reduced-motion: reduce) {
             .form-control {
@@ -2506,8 +2506,8 @@ fieldset:disabled a.btn {
         .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
         .show > .btn-success.dropdown-toggle {
           color: #fff;
-          background-color: #2b9683;
-          border-color: #288c7b; }
+          background-color: #194052;
+          border-color: #162f4b; }
           .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
           .show > .btn-success.dropdown-toggle:focus {
             box-shadow: 0 0 0 0.2rem rgba(54, 190, 166, 0.5); }
@@ -2650,8 +2650,8 @@ fieldset:disabled a.btn {
   .btn-warning-modal:not(:disabled):not(.disabled):active, .btn-warning-modal:not(:disabled):not(.disabled).active,
   .show > .btn-warning-modal.dropdown-toggle {
     color: #212529;
-    background-color: #ffab01;
-    border-color: #f3a300; }
+    background-color: #ddd;
+    border-color: #7e7e7c; }
     .btn-warning-modal:not(:disabled):not(.disabled):active:focus, .btn-warning-modal:not(:disabled):not(.disabled).active:focus,
     .show > .btn-warning-modal.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 188, 52, 0.5); }
@@ -2665,7 +2665,7 @@ fieldset:disabled a.btn {
           background-color: #dddddd;
           border-color: #dddddd; }
         .btn-warning:focus, .btn-warning.focus {
-          box-shadow: 0 0 0 0.2rem rgba(255, 188, 52, 0.5); }
+          box-shadow: 0 0 0 0.2rem rgba(150, 150, 150, 0.5); }
         .btn-warning.disabled, .btn-warning:disabled {
           color: #212529;
           background-color: #ffbc34;
@@ -2673,11 +2673,11 @@ fieldset:disabled a.btn {
         .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
         .show > .btn-warning.dropdown-toggle {
           color: #212529;
-          background-color: #ffab01;
-          border-color: #f3a300; }
+          background-color: #ddd;
+          border-color: #7e7e7c; }
           .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
           .show > .btn-warning.dropdown-toggle:focus {
-            box-shadow: 0 0 0 0.2rem rgba(255, 188, 52, 0.5); }
+            box-shadow: 0 0 0 0.2rem rgba(150, 150, 150, 0.5); }
 
 .btn-danger {
   color: #fff;
@@ -15030,10 +15030,12 @@ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   position: absolute;
   top:3rem; right: 0;
   background-position: 0 -25px;
+  color: #DDD;
 }
 .inc {
   position: absolute;
   top:1.8rem; right: 0; bottom: 1rem;
+  color: #DDD;
 }
 
 

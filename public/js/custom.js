@@ -14,7 +14,7 @@ $(function() {
 
       $(".navbar-header").addClass("expand-logo");
       if (!aux) {
-        $('#navButtons').css('margin-left', 5);
+        $('#navButtons').css('margin-left', 0);
         $(".sidebartoggler").prop("checked", !1);
         $("#main-wrapper").attr("data-sidebartype", "full");
         $("#user-profile").attr("class", "d-block");
@@ -26,7 +26,7 @@ $(function() {
       $(".navbar-header").removeClass("expand-logo");
 
       if (!aux) {
-        $('#navButtons').css('margin-left', 170);
+        $('#navButtons').css('margin-left', 185);
         $(".sidebartoggler").prop("checked", !0);
         $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
         $("#user-profile").attr("class", "d-none");
