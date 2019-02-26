@@ -12660,7 +12660,7 @@ Earnings
     background: #fff;
     padding: 20px;
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-    max-width: 400px;
+    max-width: 650px;
     width: 90%;
     margin: 10% 0; }
     .auth-wrapper .auth-box .logo {
@@ -12670,6 +12670,7 @@ Earnings
       right: 0px;
       height: 100%;
       margin: 0px;
+      display:  table;
       position: absolute; }
   .auth-wrapper #recoverform {
     display: none; }
@@ -12690,6 +12691,14 @@ Earnings
   .auth-wrapper .demo-text {
     margin-top: 30px; } }
 
+    #loginform {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+#btn-lgn {
+  width: 100%;
+}
 /*******************************/
 /*******************************/
 /*Theme Colors*/
@@ -15199,6 +15208,9 @@ img#icon-med{
 }
 }
 
+
+
+
 select::-ms-expand { display: none; }
 
 @media (max-width: 768px) {
@@ -15230,63 +15242,12 @@ select::-ms-expand { display: none; }
 }
 
 
-/*Style para login*/
-.main-head{
-    height: 150px;
-    background: #FFF;
-
-}
-
-.sidenav {
-    height: 30%;
-    background-color: #000;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-
-.main {
-    padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-}
-
-@media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 10%;
-    }
-
-    .register-form{
-        margin-top: 10%;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%;
-    }
-
-    .sidenav{
-        width: 40%;
-        height: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-
-    .login-form{
-        margin-top: 80%;
-    }
-
-    .register-form{
-        margin-top: 20%;
-    }
-}
 @media screen and (max-width: 768px){
   #navButtons{
     position: static !important;
   }
+}
+
+#logo {
+  max-width: 65%;
 }
