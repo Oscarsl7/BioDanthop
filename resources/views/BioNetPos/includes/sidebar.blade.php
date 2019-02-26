@@ -6,6 +6,7 @@
         <i id="iconoMenu" class="mdi mdi-menu font-24"></i>
       </a>
     </li>
+    <div class="new-sidebar">
     <li id='user-profile'>
       <!-- User Profile-->
       <div class="user-profile d-flex no-block dropdown m-t-20">
@@ -42,6 +43,6 @@
     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ asset('ecomerce/inicio') }}" aria-expanded="false"><i class="mdi mdi-cube-send"></i><span class="hide-menu">E-Comerce</span></a></li>
     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ asset('configuracion') }}" aria-expanded="false"><i class="mdi mdi-cube-send"></i><span class="hide-menu">Cuenta y Configuración</span></a></li>
     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html" aria-expanded="false"><i class="mdi mdi-cube-send"></i><span class="hide-menu">Autofactura</span></a></li> -->
-
+  </div>
   </ul>
 </nav>

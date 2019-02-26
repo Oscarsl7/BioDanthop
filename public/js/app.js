@@ -2,7 +2,7 @@
 //****************************
 // Tablas
 //****************************
-var aux =true;
+var aux =false;
 var DataTables = function (tabla) {
   "use strict";
   if ($(tabla).length !== 0) {
@@ -353,6 +353,7 @@ ManageSidebarType: function () {
         $("#main-wrapper").attr("data-sidebartype", "full");
       }
        $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
+       $("#user-profile").attr("class", "d-none");
     };
     $(window).ready(setsidebartype);
     $(window).on("resize", setsidebartype);
@@ -363,12 +364,18 @@ ManageSidebarType: function () {
       $("#main-wrapper").toggleClass("mini-sidebar");
       aux = !aux;
       if ($("#main-wrapper").hasClass("mini-sidebar")) {
-        //$(".sidebartoggler").prop("checked", !0);
-        //$("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
+        $(".sidebartoggler").prop("checked", !0);
+        $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
+        $('#backMenu').css('background-color', '#0D242e');
+        $('#iconoMenu').css('color', '#f1f1f1');
+        $("#user-profile").attr("class", "d-none");
+        
       }
       else {
         $("#user-profile").attr("class", "d-block");
-
+        $('#backMenu').css('background-color', '#f1f1f1');
+        $('#iconoMenu').css('color', '#0D242e');
+        $("#user-profile").attr("class", "d-block");
         $(".sidebartoggler").prop("checked", !1);
         $("#main-wrapper").attr("data-sidebartype", "full");
       }
@@ -405,6 +412,7 @@ ManageSidebarType: function () {
     /* This is for the mini-sidebar if width is less then 1170*/
     //****************************
     var setsidebartype = function () {
+
       var width = (window.innerWidth > 0) ? window.innerWidth : this.screen.width;
       if (width < 1170) {
         $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");

@@ -9,12 +9,11 @@ $(function() {
   // sidebar-hover
   // ==============================================================
 
-  $(".left-sidebar").hover(
+  $(".new-sidebar").hover(
     function() {
 
       $(".navbar-header").addClass("expand-logo");
       if (!aux) {
-        $('#navButtons').css('margin-left', 0);
         $(".sidebartoggler").prop("checked", !1);
         $("#main-wrapper").attr("data-sidebartype", "full");
         $("#user-profile").attr("class", "d-block");
@@ -26,7 +25,6 @@ $(function() {
       $(".navbar-header").removeClass("expand-logo");
 
       if (!aux) {
-        $('#navButtons').css('margin-left', 185);
         $(".sidebartoggler").prop("checked", !0);
         $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
         $("#user-profile").attr("class", "d-none");
@@ -38,6 +36,11 @@ $(function() {
   $(".nav-toggler").on('click', function() {
     $("#main-wrapper").toggleClass("show-sidebar");
     $(".nav-toggler i").toggleClass("ti-menu");
+    if( $(".nav-toggler i").hasClass("ti-menu"))
+    $("#user-profile").attr("class", "d-none");
+    else
+    $("#user-profile").attr("class", "d-block");
+
   });
   $(".nav-lock").on('click', function() {
     $("body").toggleClass("lock-nav");
@@ -206,9 +209,9 @@ $(function() {
     }
   });
 
-
   //funcion para que muestre el nombre del archivo
   $('.custom-file-input').on('change', function() {
+    console.log('onchange');
     try {
       let fileName = $(this).val().split('\\').pop();
 
@@ -217,6 +220,23 @@ $(function() {
       else {
         $(this).next('.custom-file-label').removeClass("selected")
       }
+
+    } catch {
+      $(this).next('.custom-file-label').removeClass("selected").html("Seleccionar archivo");
+    }
+
+
+
+  });
+  $('.custom-file-input').on('click', function() {
+
+    try {
+      let fileName = $(this).val().split('\\').pop();
+
+
+        $(this).next('.custom-file-label').addClass("selected").html('Choose file');
+
+
     } catch {
       $(this).next('.custom-file-label').removeClass("selected").html("Seleccionar archivo");
     }

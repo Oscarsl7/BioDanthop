@@ -2895,8 +2895,8 @@ fieldset:disabled a.btn {
   border-color: #2962FF; }
   .btn-outline-info:hover {
     color: #fff;
-    background-color: #2962FF;
-    border-color: #2962FF; }
+    background-color: #0D242E;
+    border-color: #FFF; }
   .btn-outline-info:focus, .btn-outline-info.focus {
     box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.5); }
   .btn-outline-info.disabled, .btn-outline-info:disabled {
@@ -2905,7 +2905,7 @@ fieldset:disabled a.btn {
   .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
   .show > .btn-outline-info.dropdown-toggle {
     color: #fff;
-    background-color: #2962FF;
+    background-color: #0D242E;
     border-color: #2962FF; }
     .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-info.dropdown-toggle:focus {
@@ -7962,7 +7962,7 @@ html[dir="ltr"] body .p-l-0 {
     #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .left-sidebar {
       width: 65px; }
       #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .left-sidebar:hover {
-        width: 250px; }
+         }
         #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .left-sidebar:hover .sidebar-nav .hide-menu,
         #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .left-sidebar:hover .sidebar-nav .has-arrow:after {
           display: block; }
@@ -9058,7 +9058,7 @@ customizer
 *******************/
 .customizer {
   background: #fff;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 480px;
   top: 0px;
@@ -9075,9 +9075,11 @@ customizer
     left: -54px; }
   .customizer.show-service-panel {
     right: 0px;
+    position: fixed;
+    top: 0px;
    }
   .customizer .customizer-body {
-    position: relative;
+    position: absolute;
     height: 100%; }
   .customizer .customizer-tab {
     display: flex; }
@@ -14722,7 +14724,7 @@ File: scss
       content: "";
       position: absolute;
       display: none;
-      	background: #A0A5A7;
+      background: #A0A5A7;
     }
 
     /* Show the indicator (dot/circle) when checked */
@@ -14739,12 +14741,88 @@ File: scss
     	border-radius: 50%;
     	background: #205e7e;
     }
+
+   .disabled {
+      color: #51515199;
+    }
     /*Fin Radio diseño*/
 
 
 
 
     /*Check diseño*/
+    .ch {
+      display: block;
+      font-size: 1rem;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .ch input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkm {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #fff;
+      border: 0.15rem solid #cdcdcd;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .ch:hover input ~ .checkm {
+      background-color: #fff;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .ch input:checked ~ .checkm {
+      background-color: #fff;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkm:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .ch input:checked ~ .checkm:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .ch .checkm:after {
+      left: 0.33rem;
+      top: 0rem;
+      width: 0.6rem;
+      height: 1.1rem;
+      border: solid #194052;
+      border-width: 0 0.25rem 0.25rem 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+
+
+
+
 
     .ch {
       display: block;
@@ -15069,7 +15147,11 @@ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 .custom-file-input ~ .custom-file-label::after {
   content: "Button Text";
 }
-
+#navButtons{
+  position: absolute;
+  top: 0px;
+  left: 255px;
+}
 
 /*Id especificos para propiedades*/
 
@@ -15202,4 +15284,9 @@ select::-ms-expand { display: none; }
     .register-form{
         margin-top: 20%;
     }
+}
+@media screen and (max-width: 768px){
+  #navButtons{
+    position: static !important;
+  }
 }

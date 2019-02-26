@@ -454,7 +454,7 @@
                   <input type="radio" id="customRadio22" name="customRadio" class="custom-control-input">
                   <label class="custom-control-label" for="customRadio22">Paid</label>
                 </div> -->
-                <label class="r" disabled>Paid
+                <label class="r disabled">Paid
                  <input type="radio" id="customRadio22" name="customRadio" disabled>
                  <span class="checkmark disabled-button"></span>
                 </label>
