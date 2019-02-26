@@ -2498,7 +2498,7 @@ fieldset:disabled a.btn {
           background-color: #2ea08c;
           border-color: #2b9683; */}
         .btn-success:focus, .btn-success.focus {
-          box-shadow: 0 0 0 0.2rem rgba(54, 190, 166, 0.5); }
+          box-shadow: 0 0 0 0.2rem rgba(90, 127, 176, 0.5); }
         .btn-success.disabled, .btn-success:disabled {
           color: #fff;
           background-color: #36bea6;
@@ -3587,7 +3587,7 @@ input[type="button"].btn-block {
   border-radius: 50%; }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #2962FF; }
+  background-color: #194052; }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E"); }

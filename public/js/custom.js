@@ -18,6 +18,8 @@ $(function() {
         $("#main-wrapper").attr("data-sidebartype", "full");
         $("#user-profile").attr("class", "d-block");
 
+        $('#backMenu').css('background-color', '#f1f1f1');
+        $('#iconoMenu').css('color', '#0D242e');
       }
 
     },
@@ -25,6 +27,8 @@ $(function() {
       $(".navbar-header").removeClass("expand-logo");
 
       if (!aux) {
+        $('#backMenu').css('background-color', '#0D242e');
+        $('#iconoMenu').css('color', '#f1f1f1');
         $(".sidebartoggler").prop("checked", !0);
         $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
         $("#user-profile").attr("class", "d-none");
