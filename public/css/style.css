@@ -3821,17 +3821,17 @@ input[type="button"].btn-block {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-    .nav-pills{
+    .nav-tabs{
       left: 0;
       right: 0;
     }
 
-    .nav-pills .nav-link {
+    .nav-tabs .nav-link {
       border-radius: 1px;
     color: #54544d;
   }
 
-    .nav-pills> li.nav-item{
+    .nav-tabs> li.nav-item{
       border: 1px solid #cddbe1 !important;
   height: 40px;
   flex: 0 0 25%;
@@ -3843,9 +3843,9 @@ padding-right: 10px;
 padding-left: 10px;
     }
 
-    .nav-pills .nav-link.active,
-    .nav-pills .show > .nav-link ,
-    .nav-pills .show > li.nav-item
+    .nav-tabs .nav-link.active,
+    .nav-tabs .show > .nav-link ,
+    .nav-tabs .show > li.nav-item
     {
 
     background-color: #cddbe1;
@@ -15150,7 +15150,7 @@ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
 
     white-space: nowrap;
-    
+
     display: block;
     overflow: hidden
 }

@@ -10,7 +10,7 @@
         <h3 class="card-title">Artículos</h3>
         <h5 class="card-subtitle">Estos son los artículos en el sistema. <small></small></h5>
         <!-- Nav tabs -->
-        <ul class="nav nav-pills" role="tablist">
+        <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#home" role="tab" aria-selected="true"><span class="hidden-sm-up">
             <i class="mdi mdi-shopping"></i></span><span class="hidden-xs-down">Surtido de artículos</span></a>
           </li>
