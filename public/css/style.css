@@ -12691,6 +12691,8 @@ Earnings
       height: 100%;
       margin: 0px;
       display:  table;
+      min-height: -webkit-fill-available;
+
       position: absolute; }
   .auth-wrapper #recoverform {
     display: none; }
