@@ -56,6 +56,7 @@
           </div>
         </form>
 
+<div class="table-responsive">
         <table id="data-table-fixed-header" class="table tableborder">
           <thead>
             <tr>
@@ -313,6 +314,7 @@
             </tr>
           </tbody>
         </table>
+      </div>
       </div>
     </div>
     <div class="tab-pane  p-20" id="tabEncuenta" role="tabpanel">Trabajando</div>

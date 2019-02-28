@@ -21,3 +21,8 @@ Route::get('/login', function () {
 Route::get('/template', 'BioNetPos\Configuracion\ConfiguracionController@template');
 Route::get('/template/ver', 'BioNetPos\Configuracion\ConfiguracionController@ver');
 Route::get('/template/crear', 'BioNetPos\Configuracion\ConfiguracionController@crear');
+
+Route::get('/two', function()
+{
+    return view('BioNetPos.views.Clientes.index2');
+});
