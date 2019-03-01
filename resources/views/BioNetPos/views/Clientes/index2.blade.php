@@ -33,6 +33,15 @@
             <i class="mdi mdi-vector-polyline"></i></span> <span class="hidden-xs-down">Unidades de Medida</span></a>
           </li>
         </ul>
+        <br>
+        <div class="row">
+          <div class="col-8">
+            <input type="file" id="usu_imagen_perfil" name="usu_imagen_perfil" accept="image/*" class="form-control custom-file-input">
+            <label class="custom-file-label" for="usu_imagen_perfil">Choose file</label>
+          </div>
+        </div>
+
+        <br>
         <div class="tab-content tabcontent-border">
           <div class="tab-pane active show" id="home" role="tabpanel">
             <div class="p-20">
@@ -516,7 +525,25 @@
                       </button>
                     </a>
                   </td>
-                </tr>
+                </tr><tr id="TrCategoria2">
+                  <td width="150" align="center">
+                    <a href="javascript:void(0)" onclick="ClickEditarCategoria()"
+                    data-toggle="tooltip" data-placement="bottom" data-original-title="Editar Categoría">
+                    <h5 class="font-500"></h5>
+                  </a>
+                </td>
+                <td>
+                </td>
+                <td width="50" align="center">
+                  <a href="javascript:void(0)" class="classEliminarCategoria" data-toggle="tooltip" data-placement="bottom" data-original-title="Eliminar Categoría"
+                  data-categoria_id=""
+                  data-categoria_uuid=""
+                  data-categoria_nombre="">
+                  <button type="button" class="btn btn-primary"><i class="mdi mdi-close"></i>
+                  </button>
+                </a>
+              </td>
+            </tr>
             </tbody>
           </table>
         </div>
