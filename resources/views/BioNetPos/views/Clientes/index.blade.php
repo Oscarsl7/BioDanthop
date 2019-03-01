@@ -17,7 +17,7 @@
     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabEncuenta" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></a> </li>
     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabAjustes" role="tab"><span class="hidden-sm-up"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul> -->
-  <ul class="nav nav-pills">
+  <ul class="nav nav-tabs">
     <li class="col-md-4 nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></p></a> </li>
     <li class="col-md-4 nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></p></a> </li>
     <li class="col-md-4 nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><p id="tab" align="center"><i class="fa fa-cog"></i></span><span class="hidden-xs-down">Ajustes</span></p></a> </li>
@@ -864,7 +864,7 @@
         <aside class="customizer" style="display: none;">
 
           <div class="customizer-body">
-            <div class="container">
+            <div class="container" >
               <div class="row text-left m-t-10 p-t-20">
                 <div class="col-12"><img src="../../assets/images/flecha.png" alt="" width="3%" class="close"></div><br>
               </div>

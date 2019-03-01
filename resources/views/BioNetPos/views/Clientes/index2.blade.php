@@ -272,7 +272,7 @@
                 </a>
               </div>
               <div class="table-responsive">
-                <table id="data-table-fixed-header-2" class="table table-striped table-bordered">
+                <table id="data-table-fixed-header-2" class="table tableborder">
                   <thead>
                     <tr>
                       <th class="text-nowrap">Nombre</th>
