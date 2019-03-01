@@ -101,51 +101,42 @@
 </div>
 </div> -->
 
-<div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(../../assets/images/background/playa.jpeg) no-repeat center center;">
-            <div class="auth-box on-sidebar" id="login">
-                <div id="loginform">
-                    <div class="logo">
-                        <span class="db"><img id="logo" src="../../assets/images/logos/color.png" alt="logo" class="img-fluid"  /></span>
+<!-- <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(../../assets/images/background/playa.jpeg) no-repeat center center;"> -->
 
+<div class="sidenav" style="background:url(../../assets/images/background/playa.jpeg) no-repeat center center;">
+
+    </div>
+    <div class="main justify-content-center align-items-center">
+    <div class="logo">
+        <span class="db"><img id="logo" src="../../assets/images/logos/color.png" alt="logo" class="img-fluid"  /></span>
+    </div>
+
+    <div class="col-12">
+        <div class="login-form">
+            <form class="form-group" >
+                <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" class="form-control" placeholder="User Name">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group text-center">
+                    <div class="col-xs-12 p-b-20 ">
+                        <button id="btn-lgn"class="btn" type="submit">Iniciar Sesion</button>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <form class="form-horizontal m-t-20" id="" action="../light-sidebar/index.html">
-                                <div class="form-group">
-                                    <label for="email">Usuario:</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Enter password">
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="pwd">Password:</label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-
-                                </div>
-
-                                <div class="form-group text-center">
-                                    <div class="col-xs-12 p-b-20 ">
-                                        <button id="btn-lgn"class="btn" type="submit">Iniciar Sesion</button>
-                                    </div>
-                                    <div class="col-xs-12 p-b-20">
-                                        <a href="#" id="btn-lgn" class="btn">Crear una Cuenta</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
-                                        <div class="social">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group m-b-0 m-t-10">
-                                    <div class="col-sm-12 text-center">
-
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="col-xs-12 p-b-20">
+                        <a href="#" id="btn-lgn" class="btn">Crear una Cuenta</a>
                     </div>
                 </div>
-                <div id="recoverform">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+                <!-- <div id="recoverform">
                     <div class="logo">
                         <span class="db"><img src="../../assets/images/logo-icon.png" alt="logo" /></span>
                         <h5 class="font-medium m-b-20">Recover Password</h5>
@@ -168,9 +159,8 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> -->
+
 
 @endsection
 
