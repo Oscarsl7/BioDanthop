@@ -18,9 +18,9 @@
     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabAjustes" role="tab"><span class="hidden-sm-up"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul> -->
   <ul class="nav nav-tabs">
-    <li class="nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></p></a> </li>
-    <li class="nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></p></a> </li>
-    <li class="nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><p id="tab" align="center"><i class="fa fa-cog"></i></span><span class="hidden-xs-down">Ajustes</span></p></a> </li>
+    <li class="nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></a> </li>
+    <li class="nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></a> </li>
+    <li class="nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><i class="fa fa-cog"></i></span><span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul>
   <!-- Tab panes -->
   <div class="tab-content">
