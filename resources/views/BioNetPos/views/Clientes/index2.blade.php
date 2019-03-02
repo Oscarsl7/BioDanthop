@@ -5,7 +5,7 @@
 
 @section('content')
 
-  <div class="alert alert-info">
+  <div class="alert alert-info alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
         </button>
         <h3 class="text-info"><i class="fa fa-exclamation-circle"></i> Información</h3>
