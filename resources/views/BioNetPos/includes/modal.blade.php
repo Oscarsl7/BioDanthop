@@ -7,6 +7,12 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
+              <!-- <div class="row">
+                <div class="col-8">
+                  <input type="file" id="usu_imagen_perfil" name="usu_imagen_perfil" accept="image/*" class="form-control custom-file-input">
+                  <label class="custom-file-label" for="usu_imagen_perfil">Choose file</label>
+                </div>
+              </div> -->
                 <div id="modal-contenido" style="width: 100%;"></div>
             </div>
             <div class="modal-footer text-right">

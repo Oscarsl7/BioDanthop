@@ -4,6 +4,22 @@
 @endsection
 
 @section('content')
+
+  <div class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+        </button>
+        <h3 class="text-info"><i class="fa fa-exclamation-circle"></i> Información</h3>
+        Ingresa el alta, edición o baja de un producto. El alta y eliminación, además de otras funciones en Mercado
+        Libre, pueden
+        tardar en verse reflejado en el sistema, ya que es determinado por Mercado Libre.
+    </div>
+
+
+    <div class="alert alert-success alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<strong>Congratulations!</strong> You successfully tied your shoelace!
+</div>
+
   <div class="col-md-12">
     <div class="card">
       <div class="card-body">

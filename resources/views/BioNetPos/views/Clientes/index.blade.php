@@ -18,9 +18,9 @@
     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabAjustes" role="tab"><span class="hidden-sm-up"><i class="fa fa-cog"></i></span> <span class="hidden-xs-down">Ajustes</span></a> </li>
   </ul> -->
   <ul class="nav nav-tabs">
-    <li class="col-md-4 nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></p></a> </li>
-    <li class="col-md-4 nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></p></a> </li>
-    <li class="col-md-4 nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><p id="tab" align="center"><i class="fa fa-cog"></i></span><span class="hidden-xs-down">Ajustes</span></p></a> </li>
+    <li class="nav-item"> <a href="#tabClientes" class="nav-link active" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="fas fa-users"></i></span> <span class="hidden-xs-down">Clientes</span></p></a> </li>
+    <li class="nav-item"> <a href="#tabEncuenta" class="nav-link" data-toggle="tab" aria-expanded="false" align="center"><p id="tab" align="center"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Resultado de Encuesta</span></p></a> </li>
+    <li class="nav-item"> <a href="#tabAjustes" class="nav-link" data-toggle="tab" aria-expanded="true" align="center"><p id="tab" align="center"><i class="fa fa-cog"></i></span><span class="hidden-xs-down">Ajustes</span></p></a> </li>
   </ul>
   <!-- Tab panes -->
   <div class="tab-content">
@@ -41,6 +41,9 @@
             </div>
             <div class="col text-right">
               <div class="form-group">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Open modal
+                  </button>
                 <button type="button" id="btnImportarClientes" class="btn btn-success" aria-haspopup="true" aria-expanded="false">
                   Importar
                 </button>
@@ -817,6 +820,138 @@
           </label>
         </div>
 
+
+
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="inlineFormCustomSelect">Sucursal:</label>
+                      <select class="custom-select" id="sucursales_usuario_1">
+                        <option value="1">Sucursal Uno</option>
+                        <option value="2">Sucursal Dos</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row p-t-20">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <!-- <label>Cargar archivo</label>
+                        <input type="file" id="listaClientes" name="listaClientes" accept=".xlsx, .ods" class="form-control"> -->
+                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row p-t-20">
+                    <div class="col-md-12">
+                      <h5>Instrucciones</h5>
+                      <ol>
+                        <li><a href="{ asset('docs/importarClientes.xlsx')}">Descargar</a> layout de captura de clientes.</li>
+                        <li>
+                          Capturar la información de los clientes a importar.
+                          <ul>
+                            <li>No cambiar la estructura del archivo.</li>
+                          </ul>
+                        </li>
+                        <li>Guardar información capturada.</li>
+                        <li>Click en el boton seleccionar archivo.</li>
+                        <li>Seleccionar el archivo con la lista de clientes a importar.</li>
+                        <li>Click en el boton aceptar o abrir.</li>
+                        <li>Click en el boton Importar.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </script>
+                <aside class="customizer" style="display: none;">
+
+                  <div class="customizer-body">
+                    <div class="container" >
+                      <div class="row text-left m-t-10 p-t-20">
+                        <div class="col-12"><img src="../../assets/images/flecha.png" alt="" width="3%" class="close"></div><br>
+                      </div>
+                      <div class="row p-10">
+                        <h1 class="modal-title text-center" ><strong>Datos nuevo</strong></h1>
+                      </div>
+                      <div class="row p-l-30">
+                        <div class="col-1"><img src="../../css/iconos/50x50/venta.png" alt="" id="mini-icono"></div><div class="col-11"><h4>Ficha tecnica del producto</h4></div>
+                        <div class="col-12">
+                          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                              <div class="carousel-item active"> <img class="img-fluid" src="../../assets/images/big/img4.jpg" alt="First slide"> </div>
+                              <div class="carousel-item"> <img class="img-fluid" src="../../assets/images/big/img5.jpg" alt="Second slide"> </div>
+                              <div class="carousel-item"> <img class="img-fluid" src="../../assets/images/big/img6.jpg" alt="Third slide"> </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                          </div>
+                        </div>
+                        <div class="col-12"> <label class="gray" for="">Producto 1</label></div>
+                        <div class="col-12"> <label class="gray" for="">Descripcion:</label> Lorem ipsum dolor sit amet, consectetur adipisicing elit. blaah, blaah</div>
+                        <div class="col-12"> <label class="gray" for="">Modificador 1</label></div>
+                      </div>
+                      <div class="row p-l-30">
+                        <div class="col-12 col-sm-6">Apartado</div>
+                        <div class="col-12 col-sm-6 order-sm-2">
+                          <input type="text" class="form-control" id="datepicker-autoclose1" placeholder="mm/dd/yyyy">
+                          <div class="input-group-append">
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 ">Vencimiento</div>
+                        <div class="col-12 col-sm-6">
+                          <input type="text" class="form-control" id="datepicker-autoclose2" placeholder="mm/dd/yyyy">
+                          <div class="input-group-append">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row p-l-30 p-t-20">
+                        <div class="col-1"><img src="../../css/iconos/50x50/cliente.png" alt="" id="mini-icono"></div><div class="col-11"><h4>Cliente</h4></div>
+                        <div class="col-5"><label for="" class="gray">Nombre:</label></div>     <div class="col-7">Valerie Libe</div>
+                        <div class="col-5"><label for="" class="gray">Correo:</label></div>     <div class="col-7">valerie@gmail.com</div>
+                        <div class="col-5"><label for="" class="gray">Telefono:</label></div>   <div class="col-7">4445557788</div>
+                        <div class="col-5"><label for="" class="gray">RFC:</label></div>        <div class="col-7">54tyghsbndk</div>
+                      </div>
+
+                      <div class="row p-l-30 p-t-20 justify-content-center align-items-center">
+                        <div class="col-8">
+                          <button type="button" name="button" style="width: 100%;" class="btn">Aceptar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-right">
+                                <div class="container">
+                                    <div id="modal-footer" class="row text-righ" style="width: 100%;">
+                    <div class="col-sm">
+                		<button type="button" class="btn btn-success-modal" onclick="importarClientes()">
+                			<span class=""></span>&nbsp;Importar</button>
+                    </div>
+                    <div class="col-sm">
+                		<button type="button" class="btn btn-secondary-modal" data-dismiss="modal" aria-label="Close">
+                			<i class="fas fa-times"></i>&nbsp;Cerrar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+              </div>
+            </div>
+          </div>
 
 
 
